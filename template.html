@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<title>PDF Template</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<div class="wraper main" id="worksheet_wraper"  style=" overflow: auto;"> 	
+	<!-- worksheet start -->
+	<div class="wraper header" id="wraper">
+		<div class="row" style="float: left; width: 100%; margin: 7px 0;">
+			<div class="logo" style="width: 29%; float: left;">
+				<img src="assets/image/logo.png" alt="logo" style="width: 70%;">
+			</div>
+			
+			<div class="row header-title" style="float: left; width: 67%;">
+				<ul>
+					<li style="border: 0px;">Rev.com</li><br>
+					<li style="border: 0px;">251 Kearmy St, Fl 8, San Francisco. CA 94108</li><br>
+					<li>+1 (451) 801-0500</li>
+					<li>sales@rev.com</li>
+					<li style="border: 0px;">www.rev.com</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="row" style="float: left; width: 100%; margin: 7px 0;">
+			<h2 style="text-align: center;">QUOTE FOR CLOSED CAPTIONING SERVICES</h2>
+		</div>
+		
+		<p>This quote is effective as of Aug 7, 2017 between Rev.com, a Delaware corporation ("Rev"), and Post City Picture & Sound ("Client").</p>
+
+		<div class="row content" style="float: left; width: 100%;">
+			<ul class="list">
+				<li>
+					<b>DESCRIPTION OF SEVICES:</b>
+					<span>Client has retained Rev to create English captions for 1 hour 36 minutes (total 96 minutes) of English video content. The output wil be in .srt format.<sup>1</sup></span>
+				</li>
+				<li>
+					<b>ESTIMATE OF COST:</b>
+					<span>Client will pay Rev $96. The cost will change if the number of minutes change based on the following:</span>
+					<ul class="sub-list">
+						<li>Closed caption rate of $1.00 per minute. This per minute rate does not change with the total number of minutes, e.g., 30 minutes will cost $30 and 1,000 minutes will cost $1,000.<sup>2</sup></li>
+						<li>No other penalties or change in price for any change in volume.</li>
+						<li>No additional cost for using our integrations or API.</li>
+						<li>Client has full control over the total number of minutes of content. Rev will only charge ofr the content submitted.</li>
+					</ul>
+				</li>
+				<li>
+					<b>TERMS OF SERVICE:</b>
+					<span>In all other manners, the Agreement between the Parties shall be governed by the Rev.com Terms of Service, available at</span>
+					<a href="http://www.rev.com/about/terms">http://www.rev.com/about/terms</a>
+					<span>which is incorporated by refrence into this Agreement. Where this Agreement and the Terms conflict, the Terms shall prevail.</span>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="row" style="float: left; width: 100%; margin: 25px 0px 10px 0px">
+			<div class="left" style="float: left; width: 40%;">
+				<div class="signature" style="float: left; width: 100%; height: 120px;">
+					<img src="assets/image/signature.png" alt="logo">
+				</div>
+				<p style="margin: 0;">Abid Mohsin</p>
+				<p style="margin: 0;">VP Sales and Marketing</p>
+				<p style="margin: 0px 0px 45px 0px;">Aug 25, 2017</p>
+				<hr>
+			</div>
+			
+			<!-- <div class="right" style="float: right; width: 40%"> -->
+				<hr>
+				<p>For Client</p>
+			</div>
+		
+		<p><sup>1  </sup>Note that you can download or request any or all our available output formats. See a full list at www.rev.com/caption/faq</p>
+		<span><sup>2  </sup>Note that all orders submitted on through the</span>
+		<a href="www.rev.com">www.rev.com</a>
+		<span>website are rounded up to the nearest minute and the minimum order is $1, and a 1 minute 30 seconds file will cost $2. If client uses the API or a platform that uses our API, there is a $1 minimum but after that the pricing is by the second. Therefore a 30 second file will cost $1, and a 1 minute 30 second file will cost $1.50.</span>
+
+		<div id="editor"></div>
+		<button id="cmd">Generate PDF</button>
+		
+	</div>
+</body>
+</html>

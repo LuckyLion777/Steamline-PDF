@@ -1,0 +1,72 @@
+input[type="text"]{ 
+	border-bottom: 1px solid #000;
+ 	height: auto;
+ 	box-sizing: border-box;
+ 	border-left: 0;
+ 	border-top: 0px;
+ 	border-right: 0px;
+}
+
+label{
+	font-size: 16px;
+ 	margin-bottom: 0px;
+ 	font-weight: normal !important;
+}
+
+.wraper.main input {
+	padding: 1px;
+}
+
+.left-text{
+	background: #000 !important;
+}
+
+.header-title ul{
+	padding: 0px;
+ 	text-align: center;
+ 	width: 70%;
+}
+.header-title li{
+	list-style: none;
+ 	padding: 0 2%;
+ 	border-right: 1px solid #000;
+ 	display: inline-block;
+ 	font-size: 11px;
+}
+
+.wraper.main {
+	overflow: auto;
+    width: 580px;
+    margin: 0 auto;
+}
+
+.logo {
+	padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.content ul.list {
+	list-style: decimal;
+	padding-left: 15px;
+}
+
+.content ul.sub-list {
+	list-style: lower-alpha;
+}
+
+.content li {
+	padding: 5px 0;
+}
+
+.right {
+	padding-top: 90px;
+}
+
+.left input {
+	padding-top: 30px;
+}
+
+sup {
+	vertical-align: super;
+	font-size: xx-small;
+}
