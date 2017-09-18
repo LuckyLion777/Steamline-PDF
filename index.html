@@ -1,53 +1,43 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-
 <head>
-    <title>For Quote</title>
-    <meta charset="<?php bloginfo( 'charset' ); ?>">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="profile" href="http://gmpg.org/xfn/11">
-    <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">    
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Form Style 10</title>
+<link rel="stylesheet" type="text/css" href="assets/css/form-style.css">
+
 </head>
 
 <body>
-    <span>Please fill in the information below to generate a quote for closed captions from</span>
-    <a href="Rev.com">Rev.com</a>
-    <form method="post" action="generate-pdf.php" id="contact-form" class="contact-form">
-        <div class="col-md-5">
-            <div class="col-md-6 col-sm-12 form-element">
-                <label>First Name *</label>
-                <input type="text" name="fname" id="fname" class="form-control" placeholder="First Name" required pattern="[a-zA-Z]+" required="required" />
-            </div>
-            <div class="col-md-6 col-sm-12 form-element">
-                <label>Last Name *</label>
-                <input type="text" name="lname" id="lname" class="form-control" placeholder="Last Name" required pattern="[a-zA-Z]+" required="required" />
-            </div>
-            <div class="col-md-6 col-sm-12 form-element">
-                <label> Your email (you will get a quote on this email) *</label>
-                <input type="email" name="cus-mail" id="company" class="form-control" placeholder="Email" required="required" />
-            </div>
-            <div class="col-md-6 col-sm-12 form-element"> 
-                <label>Company Email*</label>
-                <input type="email" name="com-mail" id="email" class="form-control" placeholder="Email" required="required" />
-            </div>
-            <div class="col-md-6 col-sm-12 form-element">
-                <label>Please fill in your need: XXX minutes*</label>
-                <input type="number" name="time" id="time" class="form-control" placeholder="Minutes" required="required" />
-            </div>
-        </div>
-        <div class="col-md-5">
-            <div class="col-md-12 col-sm-12 form-element">
-                <label>Other information</label>
-                <textarea type="text" name="message" id="message" class="custom-page-input-inner form-control" rows="4" placeholder="Type questions here"></textarea>
-                <p style="font-size: 10px;">Maximum Allowed: 500 characters</p>
-            </div>
-        </div>
-        <div class="col-md-10 col-sm-12 form-button">
-            <button class="btn-buypackage btn box-shadow-none" style="background-color: #3d57ce; width: 100%;border-radius: 0px;height: 40px;margin-top: 30px;" type="submit" name="submit">SUBMIT</button>
-        </div>
-    </form>
-</body>
 
+<div class="form-style-10">
+<h1>Contact us for Quote<span>Please fill in the information below to generate a quote for closed captions from <a href="Rev.com">Rev.com</a></span>
+</h1>
+<form method="post" action="generate-pdf.php" id="contact-form" class="contact-form">
+    <div class="section"><span>1</span>Name &amp; Email Address</div>
+    <div class="inner-wrap">
+        <label>Your First Name <input type="text" name="fname" required pattern="[a-zA-Z]+" required="required" /></label>
+        <label>Your Last Name <input type="text" name="lname"  required pattern="[a-zA-Z]+" required="required" /></label>
+        <label>Your Email Address (you will get a quote on this email)<input type="email" name="cus-mail"  required="required"/></label>
+        <label>Company Email Address<input type="email" name="com-mail"  required="required" /></label>
+    </div>
+
+    <div class="section"><span>2</span>Time</div>
+    <div class="inner-wrap">
+        <label>Please fill in your need: XXX minutes</label>
+        <input type="number" name="time" id="time" class="form-control" required="required" />
+    </div>
+
+    <div class="section"><span>2</span>Message</div>
+    <div class="inner-wrap">
+        <label>Other information</label>
+        <textarea type="text" name="message" id="message" class="other" rows="4"></textarea>
+    </div>
+
+    <div class="button-section">
+     <input type="submit" name="Submit" />
+    </div>
+</form>
+</div>
+
+</body>
 </html>
