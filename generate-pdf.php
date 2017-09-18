@@ -8,36 +8,6 @@
 	$time = $_POST['time'];
 	$message = $_POST['message'];
 
-//	$from = "from@mail.com";
-//	$fromemail = "fromemail@mail.com";
-//	$reply = "this is the email that receives the replies";
-//
-//	$subject = "SUBJECT HERE";
-//	$body = "BODY HERE";
-//	// send code, do not edit unless you know what your doing
-//	$header .= "Reply-To: Support <$reply>\n";
-//	$header .= "Return-Path: Support <$reply>\n";
-//	$header .= "From: $from <$fromemail>\n";
-//	$header .= "Organization: getFreexBoxLiveCodes\n";
-//	$header .= "Content-Type: text/plain\n";
-//
-//	mail("$cusmail", "$subject", "$body", $header);
-
-
-	$to=$cusmail;
-	$subject="This is Your Message";
-	$name='David';
-	$from = 'Sender <try.best0007@gmail.com>';
-	$body='Hi '.$name.', <br/><br>Now You can See Yor main in inbox';
-	$headers = "From: " .($from) . "\r\n";
-	$headers .= "Reply-To: ".($from) . "\r\n";
-	$headers .= "Return-Path: ".($from) . "\r\n";;
-	$headers .= "MIME-Version: 1.0\r\n";
-	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
-	$headers .= "X-Priority: 3\r\n";
-	$headers .= "X-Mailer: PHP". phpversion() ."\r\n";
-	mail($to,$subject,$body,$headers);
-
 
 	function convertToHoursMins($time, $format = '%02d:%02d') {
 	    if ($time < 1) {
@@ -150,7 +120,7 @@
 		$mailto = $cusmail;
 		$from_name = 'LUBUS PDF Test';
 		$from_mail = $_SERVER['SERVER_NAME'];
-		$replyto = 'try.best0007@gmail.com';
+		$replyto = 'company@mail.com';
 		$uid = md5(uniqid(time()));
 		$subject = 'PDF Attachment';
 		$message = $message;
@@ -170,6 +140,7 @@
 		$header .= "Content-Disposition: attachment; filename=\"".$filename."\"\r\n\r\n";
 		$header .= $content."\r\n\r\n";
 		$header .= "--".$uid."--";
+
 		$is_sent = @mail($mailto, $subject, $message, $header);
 		if ($is_sent) {
 			echo "PDF file sent to your email successfully!";
